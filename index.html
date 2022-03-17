@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contain">
+        <header class="headerr"><h1>ROCKET REPARTITION</h1></header>
+
+        <div class="container_app">
+            <div class="titulo"><h1>INGRESA EL TOTAL</h1></div>
+            <div class="cuerpo">
+                <form action="#" id="formulario">
+                    <div class="formPersona ">
+                        <span class="claseSpan" >TOTAL</span>
+                    </div>
+                    <div class="total">
+                        <input class=" login__input" id="login-input-user total" type="number"  placeholder="$">    
+                    </div>
+                    <div class="datos">
+                        <span class="claseSpan" >CANTIDAD DE PERSONAS</span>
+                        <div class='ctrl'>
+                            <div class='ctrl-button ctrl-button-decrement'>-</div>
+                            <div class='ctrl-counter'>
+                              <input class='ctrl-counter-input' id="cantidadP" maxlength='10' type='text' value='0'>
+                              <div class='ctrl-counter-num'>0</div>
+                            </div>
+                            <div class='ctrl-button ctrl-button-increment'>+</div>
+                        </div>
+                    </div>
+                    <div class="switch-button acomodarPagaron">
+                        <span class="claseSpan" >YA PAGARON?</span>
+
+                        <!-- Checkbox -->
+                        <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox">
+                        <!-- Botón -->
+                        <label for="switch-label" class="switch-button__label"></label>
+                    </div>
+                    <div class="mensajeError"></div>
+                    <div class="btn">
+                        <div class="acomodar shortcut info  rounded no-caption" id="reset">
+                            <span class=" mif-replay mif-4x fg-red" ></span>
+                        </div>
+                        <button type="submit" id="btnReset" class="acomodar aco shortcut info  rounded no-caption" id="reset">
+                            <span class="mif-rocket icon ac"></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="container_valores">
+        </div>
+        <div class="textos"></div>
+
+        <div class="container_users">
+            <div id="cargando" class="hidden">
+                <div class="spinner">
+                  <div class="rect1"></div>
+                  <div class="rect2"></div>
+                  <div class="rect3"></div>
+                  <div class="rect4"></div>
+                  <div class="rect5"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
