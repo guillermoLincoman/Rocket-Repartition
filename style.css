@@ -16,10 +16,11 @@ body{
     background-color: #2e2e2e;
     background-attachment: fixed;
     margin: 0;
+    width: auto;
 }
 .headerr{
     margin-top: 0;
-    width: 100%;
+    min-width: 300px;
     background-color: rgba(10, 10, 10, 0);
     display: flex;
     flex-direction: column;
@@ -666,4 +667,37 @@ body{
 
 .color{
     color: #ac9100;
+}
+
+@media(max-width: 400px){
+    body{
+        max-width: 400px !important;
+    }
+    .containd{
+        width: 40% !important;
+    }
+    .container_app{
+        height: 500px;
+        width: 300px;
+    }
+    .headerr h1{
+        font-size: 18px;
+        font-weight: 900; 
+        padding: 20px;
+        color: white;
+        margin: 0;
+    }
+    .titulo h1{
+        color: white;
+        font-size: 18px;
+        font-weight: 400 !important;
+    }
+    .login__input{
+        width: 60% !important;
+        
+    }
+    .ctrl{
+        width: 60% !important;
+        margin-top: 30px;
+    }
 }
