@@ -106,34 +106,29 @@ function agregarPersonas(id, total, cantidad, pagor){
     const containMensaje = document.querySelector(".textos");
     const divValores = document.querySelector(".container_valores");
     const texto = document.createElement("div");
+    texto.classList.add("acomodar")
     if(id == 0){
         divValores.classList.remove("desaparecer");
         if(pagor == 2)
         {
         divValores.innerHTML=`
             <h1 class="font-bold color"> TOTAL \t <h1 class="font-bold white">$ ${total}</h1></h1>
-            <h1 class="font-bold">|</h1>
             <h1 class="font-bold color"> CANTIDAD <h1 class="font-bold white">${cantidad} Personas</span></h1>
-            <h1 class="font-bold">|</h1>
             <h1 class="font-bold color"> PAGARON <h1 class="font-bold white">No</h1></h1>
-            <h1 class="font-bold">|</h1>
         ` 
         texto.innerHTML=`
             <br><br> 
-            <h3 class="claseSpan">Si alguno de los usuario realizo un gasto extra ademas de la cuenta agreguelo abajo, caso contrario poner 0</h3>
+            <h3 class="claseSpan claseH3">Si alguno de los usuario realizo un gasto extra ademas de la cuenta agreguelo abajo, caso contrario poner 0</h3>
         `
         }else{
         divValores.innerHTML=`
             <h1 class="font-bold color"> TOTAL \n<h1 class="font-bold white">$ ${total}</h1></h1>
-            <h1 class="font-bold">|</h1>
             <h1 class="font-bold color"> CANTIDAD <h1 class="font-bold white">${cantidad} Personas</h1></h1>
-            <h1 class="font-bold">|</h1>
             <h1 class="font-bold color"> PAGARON <h1 class="font-bold white">Si</h1></h1>
-            <h1 class="font-bold">|</h1>
         ` 
         texto.innerHTML=`
             <br><br> 
-            <h3 class="claseSpan">Ingrese el total que puso cada persona para pagar la cuenta, en caso de no haber pagado nada ingrese 0</h3>
+            <h3 class="claseSpan claseH3">Ingrese el total que puso cada persona para pagar la cuenta, en caso de no haber pagado nada ingrese 0</h3>
         `
         }
 
